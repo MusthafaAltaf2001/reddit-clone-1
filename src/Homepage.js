@@ -10,6 +10,7 @@ import { HandleMoreNewPosts } from "./Actions/SortOptionActions/HandleNewPosts";
 import { HandleMoreTopPosts } from "./Actions/SortOptionActions/HandleTopPosts";
 import { HandleBestPosts } from "./Actions/SortOptionActions/HandleBestPosts";
 import { useSearchParams } from "react-router-dom";
+import URL from "./URL";
 
 function Homepage() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -20,25 +21,25 @@ function Homepage() {
   // let authCode = localStorage.getItem("authCode");
 
   // console.log("start test");
-  fetch("http://localhost:3001/getRequester")
+  fetch(`${URL}/getRequester`)
     .then((res) => res.json())
     .then((res) => console.log(res));
   //   .then(() => console.log("end test"));
 
   const setRequester = async () => {
-    // await fetch("http://localhost:3001/getRequester")
+    // await fetch(`${URL}/getRequeste`)
     //   .then((res) => res.json())
     //   .then((res) => {
     let authCode = localStorage.getItem("authCode");
     if (redditUser == "null") {
-      fetch("http://localhost:3001/login")
+      fetch(`${URL}/logi`)
         .then((authUrl) => authUrl.json())
         .then((authUrl) => {
           localStorage.setItem("redditUser", "loggedIn");
           window.location.replace(authUrl);
         });
     } else {
-      fetch(`http://localhost:3001/?code=${authCode}`)
+      fetch(`${URL}/?code=${authCode}`)
         .then((res) => res.json())
         // .then((res) => localStorage.setItem("redditUser", "loggedIn"))
         .catch((err) => console.log(err));
@@ -50,7 +51,7 @@ function Homepage() {
   //   let redditUser = localStorage.getItem("redditUser");
 
   //   if (redditUser == "null") {
-  //     fetch("http://localhost:3001/login")
+  // fetch(`${URL}/login`)
   //       .then((authUrl) => authUrl.json())
   //       .then((authUrl) => {
   //         localStorage.setItem("redditUser", "loggedIn");
@@ -58,7 +59,7 @@ function Homepage() {
   //       });
   //   } else {
   //     // let authCode = localStorage.getItem("authCode");
-  //     await fetch(`http://localhost:3001/?code=${code}`)
+  //     await fetch(`${URL}/?code=${code}`)
   //       .then((res) => res.json())
   //       // .then((res) => localStorage.setItem("redditUser", "loggedIn"))
   //       .catch((err) => console.log(err));

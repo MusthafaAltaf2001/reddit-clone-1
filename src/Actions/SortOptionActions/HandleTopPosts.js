@@ -1,6 +1,8 @@
+import URL from "../../URL";
+
 export function HandleTopPosts() {
   return async (dispatch) => {
-    return await fetch("http://localhost:3001/top")
+    return await fetch(`${URL}/top`)
       .then((res) => res.json())
       .then((res) => dispatch({ type: "FETCH_TOP_POSTS", payload: res }))
       .catch((err) => console.log(err));
@@ -9,7 +11,7 @@ export function HandleTopPosts() {
 
 export function HandleMoreTopPosts() {
   return async (dispatch) => {
-    return await fetch("http://localhost:3001/fetchMoreTop")
+    return await fetch(`${URL}/fetchMoreTop`)
       .then((res) => res.json())
       .then((res) => dispatch({ type: "FETCH_MORE_TOP_POSTS", payload: res }))
       .catch((err) => console.log(err));
