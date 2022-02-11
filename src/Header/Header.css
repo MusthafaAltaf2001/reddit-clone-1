@@ -1,0 +1,171 @@
+.header {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1b;
+  position: sticky;
+  color: white;
+  top: 0;
+  /* z-index: 80; */
+  border-bottom-style: solid;
+  border-bottom-color: #343536;
+  border-bottom-width: 1px;
+  padding-right: 8px;
+}
+
+.header_logo_image {
+  padding: 5px;
+  width: 125px;
+  object-fit: contain;
+}
+
+.header_dropdown {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 270px;
+}
+
+.header_dropdown:hover {
+  border-style: solid;
+  border-color: #343536;
+  border-width: 1px;
+  border-radius: 4px;
+}
+
+.header_dropdown_homeicon {
+  padding: 3px;
+}
+
+.header_dropdown_hometext {
+  padding: 3px;
+  padding-right: 150px;
+}
+
+.header_dropdown_expandicon {
+  padding: 3px;
+}
+
+.header_search_input {
+  width: 500px;
+  color: white;
+  border-radius: 4px;
+  height: 36px;
+  background-color: #272729;
+  border: 1px solid #343536;
+  /* width: 100%; */
+  margin: 0px 20px;
+}
+
+.header_search_input:hover {
+  border: 1px solid #d7dadc;
+}
+
+.header_accountinfo {
+  display: flex;
+  align-items: center;
+}
+
+.header_accountinfo_flex {
+  width: 280px;
+  display: flex;
+  align-items: center;
+}
+
+.header_accountInfo_circle {
+  margin-left: 10px;
+  height: 25px;
+  width: 25px;
+  background-color: #343536;
+  border-radius: 50%;
+}
+
+.header_accountInfo_avatar_img {
+  width: 40px;
+  height: 35px;
+  bottom: 3px;
+  right: 33px;
+  position: relative;
+}
+
+.header_accountinfo:hover {
+  border: 1px solid #343536;
+  border-radius: 4px;
+}
+
+.header_accountinfo_userinfo {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.header_accountinfo_userinfo_name {
+  color: #d7dadc;
+  font-weight: bold;
+  font-family: IBMPlexSans;
+  font-size: 13px;
+  margin: 0px 0px 2px 0px;
+}
+
+.header_accountinfo_userinfo_karma {
+  color: #a8aaab;
+  font-family: IBMPlexSans;
+  display: flex;
+  font-size: 13px;
+  margin: 0px 0px 2px 0px;
+}
+
+.header_auth {
+  display: flex;
+  align-items: center;
+}
+
+.header_auth_icon {
+  width: 23px;
+  height: 23px;
+  padding: 7px;
+  border-radius: 2px;
+}
+
+.header_auth_icon:hover {
+  background-color: #272729;
+}
+/* 272729 */
+
+.header_auth_div_vertical_line {
+  margin-left: 6px;
+  margin-right: 6px;
+  border-left: 1px solid #343536;
+  border-right: 8px solid #1a1a1b;
+  height: 30px;
+  /* color: white; */
+}
+
+.header_auth_div_icon {
+  width: 23px;
+  height: 23px;
+  padding: 7px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.header_auth_div_icon:hover {
+  background-color: #272729;
+}
+
+.header_login {
+  border: 1px solid #d7dadc;
+  border-radius: 9999px;
+  padding: 4px 16px;
+  margin: 0px 8px;
+  color: white;
+}
+
+.header_signup {
+  border: 1px solid #d7dadc;
+  border-radius: 9999px;
+  padding: 4px 16px;
+  background-color: #d7dadc;
+  color: #1a1a1b;
+  margin: 0px 8px;
+}
