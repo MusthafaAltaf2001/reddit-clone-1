@@ -1,4 +1,4 @@
-import URL from "../../URL";
+import URL from "../../ApiUrl/URL";
 
 export function HandleTopPosts() {
   return async (dispatch) => {

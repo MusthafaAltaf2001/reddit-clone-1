@@ -10,7 +10,7 @@ import { HandleMoreNewPosts } from "./Actions/SortOptionActions/HandleNewPosts";
 import { HandleMoreTopPosts } from "./Actions/SortOptionActions/HandleTopPosts";
 import { HandleBestPosts } from "./Actions/SortOptionActions/HandleBestPosts";
 import { useSearchParams } from "react-router-dom";
-import URL from "./URL";
+import URL from "./ApiUrl/URL";
 
 function Homepage() {
   const [searchParams, setSearchParams] = useSearchParams();
