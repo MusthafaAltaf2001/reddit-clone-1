@@ -1,3 +1,3 @@
-const URL = "https://git.heroku.com/redita2-server.git";
+const URL = "https://redita2-server.herokuapp.com/";
 
 module.exports = URL;
