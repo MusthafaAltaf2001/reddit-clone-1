@@ -9,25 +9,9 @@ let moreHotPosts;
 let moreNewPosts;
 let moreTopPosts;
 
-// const REDDIT_CONSUMER_KEY = "L6EI6xqvoK0d2_nN4YTCVg";
-// const REDDIT_CONSUMER_SECRET = "WHpK0bWweUDurveE4X76WeTqgPnsHA";
+
 let r = null;
-// let r = new snoowrap({
-//   userAgent: "redita-clone2",
-//   clientId: "L6EI6xqvoK0d2_nN4YTCVg",
-//   clientSecret: "WHpK0bWweUDurveE4X76WeTqgPnsHA",
-//   username: "fistbump123",
-//   password: "thehedgehogisalive",
-//   // username: "Fine-Leading-8055",
-//   // password: "qwertyuiop1234",
-// });
-//  = new snoowrap({
-//   userAgent: "redita-clone2",
-//   clientId: "L6EI6xqvoK0d2_nN4YTCVg",
-//   clientSecret: "WHpK0bWweUDurveE4X76WeTqgPnsHA",
-//   username: "fistbump123",
-//   password: "thehedgehogisalive",
-// });
+
 
 app.use(express.json());
 app.use(cors());
