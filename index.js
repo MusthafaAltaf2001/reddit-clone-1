@@ -24,13 +24,7 @@ app.get("/getRequester", (req, res) => {
 
 app.get("/login", async (req, res) => {
   let authenticationUrl = await snoowrap.getAuthUrl({
-    userAgent: "redita-clone2",
-    clientId: "L6EI6xqvoK0d2_nN4YTCVg",
-    clientSecret: "WHpK0bWweUDurveE4X76WeTqgPnsHA",
-    scope: scopes,
-    redirectUri: "http://127.0.0.1:3000",
-    permanent: true,
-    state: "fe211bebc52eb3da9bef8db6e63104d3",
+
   });
   res.json(authenticationUrl);
 });
@@ -40,11 +34,6 @@ app.get("/", async (req, res) => {
   console.log("code: " + code);
   await snoowrap
     .fromAuthCode({
-      code: code,
-      userAgent: "redita-clone2",
-      clientId: "L6EI6xqvoK0d2_nN4YTCVg",
-      clientSecret: "WHpK0bWweUDurveE4X76WeTqgPnsHA",
-      redirectUri: "http://127.0.0.1:3000",
     })
     .then((requester) => (r = requester))
     .catch((err) => console.log(err));
